@@ -52,7 +52,7 @@ mkdir -p ~/.vim/tags/
 fi
 echo "${BLUE}install fzf${RESET}"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.zsh/.fzf
-echo n|~/.zsh/.fzf/install
+#echo n|sudo ~/.zsh/.fzf/install
 sudo cp ./.fzf.zsh ~/.zsh/
 sudo chmod 755 ~/.zsh/.fzf.zsh
 echo "${GREEN} fzf installation is completed${RESET}"
