@@ -98,5 +98,4 @@ git
 zsh-autosuggestions 
 zsh-syntax-highlighting
 )
-[ -f ~/.zsh/.fzf.zsh ] && source ~/.zsh/.fzf.zsh
 source $ZSH/oh-my-zsh.sh

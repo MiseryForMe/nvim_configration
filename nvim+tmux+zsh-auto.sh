@@ -51,8 +51,8 @@ if [ ! -d ~/.vim/tags ];then
 mkdir -p ~/.vim/tags/
 fi
 echo "${BLUE}install fzf${RESET}"
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.zsh/.fzf
-#echo n|sudo ~/.zsh/.fzf/install
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+echo n|sudo ~/.zsh/.fzf/install
 sudo cp ./.fzf.zsh ~/.zsh/
 sudo chmod 755 ~/.zsh/.fzf.zsh
 echo "${GREEN} fzf installation is completed${RESET}"
