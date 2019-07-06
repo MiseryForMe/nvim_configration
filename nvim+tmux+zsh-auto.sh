@@ -22,7 +22,7 @@ sudo apt-get install -y tmux
 sudo apt-get install -y ctags
 echo "${BLUE}install oh my zsh${RESET}"
 sudo rm -rf ~/.oh-my-zsh
-echo y|sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo y|sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "${BLUE}make zsh default${RESET}" 
 sudo usermod -s /bin/zsh root
@@ -51,8 +51,9 @@ if [ ! -d ~/.vim/tags ];then
 mkdir -p ~/.vim/tags/
 fi
 echo "${BLUE}install fzf${RESET}"
+rm -rf ~/.fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-echo n|sudo ~/.fzf/install
+echo n|~/.fzf/install
 echo "${GREEN} fzf installation is completed${RESET}"
 echo "${BLUE}install zsh autosuggestions${RESET}"
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
