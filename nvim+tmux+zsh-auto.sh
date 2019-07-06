@@ -52,9 +52,7 @@ mkdir -p ~/.vim/tags/
 fi
 echo "${BLUE}install fzf${RESET}"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-echo n|sudo ~/.zsh/.fzf/install
-sudo cp ./.fzf.zsh ~/.zsh/
-sudo chmod 755 ~/.zsh/.fzf.zsh
+echo n|sudo ~/.fzf/install
 echo "${GREEN} fzf installation is completed${RESET}"
 echo "${BLUE}install zsh autosuggestions${RESET}"
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
