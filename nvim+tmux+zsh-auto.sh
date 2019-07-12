@@ -21,7 +21,7 @@ sudo apt-get install -y zsh
 sudo apt-get install -y tmux
 sudo apt-get install -y ctags
 echo "${BLUE}install oh my zsh${RESET}"
-cp -r ./tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "${GREEN} zsh autosuggestions installation is completed${RESET}"
 echo "${BLUE}install oh my zsh${RESET}"
 sudo rm -rf ~/.oh-my-zsh
