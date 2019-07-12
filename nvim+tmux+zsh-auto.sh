@@ -47,6 +47,11 @@ sudo cp ./.zshrc ~/
 sudo chmod 755 ~/.zshrc
 sudo cp ./.tmux.conf ~/
 sudo chmod 755 ~/.tmux.conf
+echo "${BLUE}installing tmux plugins"
+~/.tmux/plugins/tpm/bin/install_plugins
+tmux source ~/.tmux.conf
+echo n|sudo ~/.fzf/install
+echo "${GREEN} fzf installation is completed${RESET}"
 if [ ! -d ~/.vim/tags ];then
 mkdir -p ~/.vim/tags/
 fi
