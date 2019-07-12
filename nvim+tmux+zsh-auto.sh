@@ -12,6 +12,7 @@ if [ -d ~/.zsh ];then
 sudo rm -rf ~/.zsh
 mkdir ~/.zsh
 fi
+echo "${BLUE} neovim zsh tmux ctags installation start"
 sudo apt-get install -y software-properties-common
 sudo apt-get install -y python-software-properties 
 sudo apt-add-repository -y ppa:neovim-ppa/stable
@@ -20,21 +21,25 @@ sudo apt-get install -y neovim
 sudo apt-get install -y zsh
 sudo apt-get install -y tmux
 sudo apt-get install -y ctags
+echo "${GREEN} neovim zsh tmux ctags installation is completed${RESET}"
 echo "${BLUE}install oh my zsh${RESET}"
 sudo rm -rf ~/.oh-my-zsh
 echo y|sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+echo "${GREEN} oh my zsh installation is completed${RESET}"
 echo "${BLUE}make zsh default${RESET}" 
 sudo usermod -s /bin/zsh root
 sudo usermod -s /bin/zsh $USER
 
-echo "${BLUE}install vim-plug${RESET}"
+echo "${GREEN}  zsh  is set as default${RESET}"
+echo "${BLUE}install vim-plug"
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir -p ~/.config/nvim
 sudo cp ./init.vim ~/.config/nvim
 sudo chmod 755 ~/.config/nvim/init.vim
 
+echo "${GREEN} vim-plug installation is completed${RESET}"
 rm -rf ~/.local/share/nvim
 cp -rf ./nvim ~/.local/share
 if [ -f ~/.zshrc ];then
@@ -51,8 +56,7 @@ echo "${BLUE}installing tmux plugins"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 tmux source ~/.tmux.conf
-echo n|sudo ~/.fzf/install
-echo "${GREEN} fzf installation is completed${RESET}"
+echo "${GREEN} tmux plugins installation is completed${RESET}"
 if [ ! -d ~/.vim/tags ];then
 mkdir -p ~/.vim/tags/
 fi
