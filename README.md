@@ -2,23 +2,28 @@
 
 ## A Rapid Installation Mode
 
-Clone this repo:
+1.Clone this repo:
 ```sh
 git clone https://github.com/MiseryForMe/nvim_configration.git
 ```
 
 
-1.Quick installation
+2.Quick installation
 ```sh
 cd nvim_configration
 bash nvim+tmux+zsh-auto.sh
 ```
 
-2.Open nvim, and
+3.Open nvim, and
 ```sh
 :PlugInstall
 ```
-
+4.install TmuxPlugins
+```
+source ~/.zshrc
+tmux source ~/.tmux.conf
+~/.tmux/plugins/tpm/bin/install_plugins
+```
 And it would be all done~
 tools including nvim zsh tmux and several needed plugs will be installed automaticly
 
