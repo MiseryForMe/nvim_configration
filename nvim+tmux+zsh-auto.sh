@@ -54,8 +54,6 @@ sudo cp ./.tmux.conf ~/
 sudo chmod 755 ~/.tmux.conf
 echo "${BLUE}installing tmux plugins"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-~/.tmux/plugins/tpm/bin/install_plugins
-tmux source ~/.tmux.conf
 echo "${GREEN} tmux plugins installation is completed${RESET}"
 if [ ! -d ~/.vim/tags ];then
 mkdir -p ~/.vim/tags/
