@@ -58,20 +58,19 @@ echo "${GREEN} tmux plugins installation is completed${RESET}"
 if [ ! -d ~/.vim/tags ];then
 mkdir -p ~/.vim/tags/
 fi
-echo "${BLUE}install fzf${RESET}"
+echo "${BLUE}install fzf"
 rm -rf ~/.fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 echo n|sudo ~/.fzf/install
 echo "${GREEN} fzf installation is completed${RESET}"
-echo "${BLUE}install zsh autosuggestions${RESET}"
+echo "${BLUE}install zsh autosuggestions"
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 echo "${GREEN} zsh autosuggestions installation is completed${RESET}"
-echo "${BLUE}install zsh-syntax-highlighting${RESET}"
+echo "${BLUE}install zsh-syntax-highlighting"
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 echo "${GREEN} zsh-syntax-highlighting installation is completed${RESET}"
 
 echo "${RED}install over${RESET}"
-source ~/.zshrc
 ctags -R -f ~/.vim/tags/python3.ctags /usr/lib/python3.5/
 ctags -R -f ~/.vim/tags/python3-dp.ctags /usr/local/lib/python3.5/dist-packages
 ctags -R -f ~/.vim/tags/python3-sp.ctags /home/jinyanming/.local/lib/python3.5/site-packages
