@@ -138,8 +138,8 @@ func SetTitle()
 	else 
 		call setline(1, "'''*************************************************************************") 
 		call append(line("."), "	> File Name: ".expand("%")) 
-		call append(line(".")+1, "	> Author: jinyanming") 
-		call append(line(".")+2, "	> Mail: jinyanming@megvii.com") 
+		call append(line(".")+1, "	> Author: Your Name (edit this in the init.vim file)") 
+		call append(line(".")+2, "	> Mail: Your Mail@megvii.com") 
 		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
 		call append(line(".")+4, " ************************************************************************'''") 
 		call append(line(".")+5, "")
@@ -467,7 +467,7 @@ Plug 'https://github.com/vim-scripts/taglist.vim.git'
 "let g:python3_host_prog = '/usr/local/bin/python3'
 " Auto-Complete
 Plug 'roxma/nvim-completion-manager'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'hdima/python-syntax'
 Plug 'vim-syntastic/syntastic'
