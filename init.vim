@@ -425,7 +425,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'nathanaelkane/vim-indent-guides'
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'wakatime/vim-wakatime'
+"Plug 'wakatime/vim-wakatime'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
