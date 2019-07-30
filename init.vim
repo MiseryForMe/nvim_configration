@@ -456,7 +456,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug '~/my-prototype-plugin'
 
 " Easy Align
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 
 Plug 'easymotion/vim-easymotion'
