@@ -36,8 +36,7 @@ echo "${BLUE}install vim-plug"
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir -p ~/.config/nvim
-sudo cp ./init.vim ~/.config/nvim
-sudo chmod 755 ~/.config/nvim/init.vim
+cat ./init.vim > ~/.config/nvim/init.vim
 
 echo "${GREEN} vim-plug installation is completed${RESET}"
 rm -rf ~/.local/share/nvim
@@ -48,10 +47,8 @@ fi
 if [ -f ~/.tmux.conf ];then
 sudo rm ~/.tmux.conf
 fi
-sudo cp ./.zshrc ~/
-sudo chmod 755 ~/.zshrc
-sudo cp ./.tmux.conf ~/
-sudo chmod 755 ~/.tmux.conf
+cat ./.zshrc > ~/.zshrc
+cat ./.tmux.conf > ~/.tmux.conf
 echo "${BLUE}installing tmux plugins"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "${GREEN} tmux plugins installation is completed${RESET}"
