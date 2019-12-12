@@ -21,6 +21,7 @@ sudo apt-get install -y neovim
 sudo apt-get install -y zsh
 sudo apt-get install -y tmux
 sudo apt-get install -y ctags
+sudo apt-get install -y build-essential cmake python3-dev
 echo "${GREEN} neovim zsh tmux ctags installation is completed${RESET}"
 echo "${BLUE}install oh my zsh${RESET}"
 sudo rm -rf ~/.oh-my-zsh
@@ -49,6 +50,10 @@ sudo rm ~/.tmux.conf
 fi
 cat ./.zshrc > ~/.zshrc
 cat ./.tmux.conf > ~/.tmux.conf
+
+echo "${BLUE}installing YCM plugins"
+cat ./global_extra_conf.py > ~/global_extra_conf.py
+echo "${GREEN}YCM plugins installation is completed${RESET}"
 echo "${BLUE}installing tmux plugins"
 sudo rm -r ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
