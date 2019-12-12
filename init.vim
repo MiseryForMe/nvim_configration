@@ -533,7 +533,7 @@ map  N <Plug>(easymotion-prev)
 
 nmap <F8> :TagbarToggle<CR>
 "ycm configration
-"let g:ycm_python_interpreter_path = ''
+let g:ycm_python_interpreter_path = '/usr/bin/python'
 let g:ycm_python_sys_path = []
 let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_interpreter_path',
