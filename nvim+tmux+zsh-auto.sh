@@ -50,6 +50,7 @@ fi
 cat ./.zshrc > ~/.zshrc
 cat ./.tmux.conf > ~/.tmux.conf
 echo "${BLUE}installing tmux plugins"
+sudo rm -r ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "${GREEN} tmux plugins installation is completed${RESET}"
 if [ ! -d ~/.vim/tags ];then

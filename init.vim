@@ -460,7 +460,6 @@ Plug 'junegunn/vim-easy-align'
 
 Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/vim-scripts/taglist.vim.git'
-" Auto-Complete
 Plug 'ncm2/ncm2'
 " UI Plugin
 Plug 'roxma/nvim-yarp'
@@ -474,7 +473,7 @@ set completeopt=noinsert,menuone,noselect
 " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-"Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'hdima/python-syntax'
 Plug 'vim-syntastic/syntastic'
