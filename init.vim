@@ -415,7 +415,7 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 "filetype off                   " required!
 
 call plug#begin('~/.vim/plugged')
-
+Plug 'ervandew/supertab'
 " Make sure you use single quotes
 
 Plug 'majutsushi/tagbar'
@@ -432,8 +432,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " Using a non-master branch
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 "Plug 'fatih/vim-go', { 'tag': '*' }
 
@@ -461,12 +460,9 @@ Plug 'junegunn/vim-easy-align'
 
 Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/vim-scripts/taglist.vim.git'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" let g:deoplete#enable_at_startup = 1
-"let g:python_host_prog  = '/usr/local/bin/python'
-"let g:python3_host_prog = '/usr/local/bin/python3'
 " Auto-Complete
 Plug 'ncm2/ncm2'
+" UI Plugin
 Plug 'roxma/nvim-yarp'
 " enable ncm2 for all buffers
 autocmd BufEnter * call ncm2#enable_for_buffer()
@@ -482,6 +478,7 @@ Plug 'ncm2/ncm2-path'
 Plug 'kien/ctrlp.vim'
 Plug 'hdima/python-syntax'
 Plug 'vim-syntastic/syntastic'
+Plug 'rhysd/nyaovim-popup-tooltip'
 " Initialize plugin system
 call plug#end()
 """""syntax configration""""""""""""""
@@ -536,6 +533,3 @@ map  N <Plug>(easymotion-prev)
 
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_ctags_bin='/usr/bin/ctags'
-
-" UI Plugin
-Plug 'rhysd/nyaovim-popup-tooltip'

@@ -68,8 +68,8 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CU
 echo "${GREEN} zsh-syntax-highlighting installation is completed${RESET}"
 
 echo "${RED}now generate ctags"
-ctags -R -f ~/.vim/tags/python3.ctags /usr/lib/python3.5/
-ctags -R -f ~/.vim/tags/python3-dp.ctags /usr/local/lib/python3.5/dist-packages
-ctags -R -f ~/.vim/tags/python3-sp.ctags ~/.local/lib/python3.5/site-packages
+sudo ctags -R -f ~/.vim/tags/python3.ctags /usr/lib/python3.5/
+sudo ctags -R -f ~/.vim/tags/python3-dp.ctags /usr/local/lib/python3.5/dist-packages
+sudo ctags -R -f ~/.vim/tags/python3-sp.ctags ~/.local/lib/python3.5/site-packages
 echo "${GREEN}ctags generating is over!${RESET}"
 echo "${GREEN}All steps is done!${RESET}"
