@@ -409,62 +409,45 @@ set termencoding=utf-8
 set encoding=utf8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 
-"autocmd FileType python set omnifunc=pythoncomplete#Complete
 
-"set nocompatible               " be iMproved
-"filetype off                   " required!
 
 call plug#begin('~/.vim/plugged')
-Plug 'ervandew/supertab'
+"Plug 'ervandew/supertab'
 " Make sure you use single quotes
 
 Plug 'majutsushi/tagbar'
 
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 Plug 'nathanaelkane/vim-indent-guides'
-" Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 "Plug 'wakatime/vim-wakatime'
-" On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
-" Using a non-master branch
 Plug 'ycm-core/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-"Plug 'fatih/vim-go', { 'tag': '*' }
 
-" Airline
 "Plug 'Lokaltog/vim-powerline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"let g:Powerline_colorscheme='solarized256'
 
-" Color Scheme
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
-" Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
-" Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-" Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
 
-" Easy Align
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 
 Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/vim-scripts/taglist.vim.git'
-Plug 'ncm2/ncm2'
 " UI Plugin
 Plug 'roxma/nvim-yarp'
-" enable ncm2 for all buffers
+Plug 'ncm2/ncm2'
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
@@ -474,7 +457,7 @@ set completeopt=noinsert,menuone,noselect
 " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'hdima/python-syntax'
 Plug 'vim-syntastic/syntastic'
