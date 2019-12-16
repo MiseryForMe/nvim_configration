@@ -13,10 +13,10 @@ sudo rm -rf ~/.zsh
 mkdir ~/.zsh
 fi
 echo "${BLUE} neovim zsh tmux ctags installation start"
+sudo apt update
 sudo apt-get install -y software-properties-common
 sudo apt-get install -y python-software-properties 
 sudo apt-add-repository -y ppa:neovim-ppa/stable
-sudo apt update
 sudo apt-get install -y neovim
 sudo apt-get install -y zsh
 sudo apt-get install -y tmux
