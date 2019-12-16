@@ -13,10 +13,10 @@ sudo rm -rf ~/.zsh
 mkdir ~/.zsh
 fi
 echo "${BLUE} neovim zsh tmux ctags installation start"
-sudo apt update
+sudo apt-add-repository -y ppa:neovim-ppa/stable
+sudo apt-get update
 sudo apt-get install -y software-properties-common
 sudo apt-get install -y python-software-properties 
-sudo apt-add-repository -y ppa:neovim-ppa/stable
 sudo apt-get install -y neovim
 sudo apt-get install -y zsh
 sudo apt-get install -y tmux
@@ -55,7 +55,9 @@ echo "${BLUE}installing YCM plugins"
 cat ./global_extra_conf.py > ~/global_extra_conf.py
 echo "${GREEN}YCM plugins installation is completed${RESET}"
 echo "${BLUE}installing tmux plugins"
+if [ -d ~/.tmux/plugins/tpm ];then
 sudo rm -r ~/.tmux/plugins/tpm
+fi
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "${GREEN} tmux plugins installation is completed${RESET}"
 if [ ! -d ~/.vim/tags ];then
