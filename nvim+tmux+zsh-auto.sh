@@ -22,7 +22,7 @@ sudo apt-get install -y zsh
 sudo apt-get install -y tmux
 sudo apt-get install -y ctags
 sudo apt-get install -y build-essential cmake python3-dev
-sudo pip3 install -y pynvim
+sudo pip3 install pynvim
 echo "${GREEN} neovim zsh tmux ctags installation is completed${RESET}"
 echo "${BLUE}install oh my zsh${RESET}"
 sudo rm -rf ~/.oh-my-zsh
