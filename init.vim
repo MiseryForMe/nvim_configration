@@ -511,16 +511,18 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 
+
+"forbid the id complete
+let g:ycm_min_num_of_chars_for_completion = 999
 nnoremap gl :YcmCompleter GoToDeclaration 
 nnoremap gf :YcmCompleter GoToDefinition 
 nnoremap gg :YcmCompleter GoToDefinitionElseDeclaration
 "ycm end
+
 "ncm2 configration 
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
-
-" NOTE: you need to install completion sources to get completions. Check
-" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
 " ncm2 configration end
+
