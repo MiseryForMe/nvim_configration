@@ -395,13 +395,7 @@ let g:miniBufExplModSelTarget = 1
 nmap tl :Tlist<cr>
 
 "python补全
-let g:pydiction_location = '~/.vim/after/complete-dict'
-let g:pydiction_menu_height = 20
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
 
 
 set iskeyword+=.
