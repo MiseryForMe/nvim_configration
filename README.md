@@ -27,7 +27,7 @@ bash nvim+tmux+zsh-auto.sh
 cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --clangd-completer
 ```
-5.install powerline fons in you local machine!!!(not on servers,do the below operation on you local machine)
+6.install powerline fons in you local machine!!!(not on servers,do the below operation on you local machine)
 ```
 git clone https://github.com/powerline/fonts.git
 cd fonts
