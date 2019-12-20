@@ -1,5 +1,8 @@
-#by jinyanming 
-
+## by 金焰明(JinYanming)
+## email me if there is any problems:1535640262@qq.com
+## I will keep the maintenance work and update Irregularly
+# This project integrates neovim tmux zsh and some very useful plugs of them including YouCompleteMe FZF auto pairs nerdtree ncm2 and so on.
+### The installation is quite easy as you do as the follow steps.
 ## A Rapid Installation Mode
 
 1.Clone this repo:
