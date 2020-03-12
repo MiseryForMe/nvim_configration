@@ -428,7 +428,7 @@ Plug 'https://github.com/vim-scripts/taglist.vim.git'
 " UI Plugin
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2'
-Plug 'ncm2/ncm2-bufword'
+"Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 "Plug 'davidhalter/jedi-vim'
 Plug 'kien/ctrlp.vim'
