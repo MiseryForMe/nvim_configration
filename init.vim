@@ -428,7 +428,7 @@ Plug 'https://github.com/vim-scripts/taglist.vim.git'
 " UI Plugin
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2'
-"Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 "Plug 'davidhalter/jedi-vim'
 Plug 'kien/ctrlp.vim'
@@ -520,9 +520,9 @@ nnoremap gg :YcmCompleter GoToDefinitionElseDeclaration
 "ycm end
 
 "ncm2 configration 
-autocmd BufEnter * call ncm2#enable_for_buffer()
+"autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
-set completeopt=noinsert,menuone,noselect
+"set completeopt=noinsert,menuone,noselect
 " ncm2 configration end
 
