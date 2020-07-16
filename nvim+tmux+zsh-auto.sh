@@ -13,15 +13,18 @@ sudo rm -rf ~/.zsh
 mkdir ~/.zsh
 fi
 echo "${BLUE} neovim zsh tmux ctags installation start"
-sudo apt-add-repository -y ppa:neovim-ppa/stable
-sudo apt-get update
 sudo apt-get install -y software-properties-common
-sudo apt-get install -y python-software-properties 
+#sudo apt-add-repository -y ppa:neovim-ppa/stable
+sudo apt-get update
+#sudo apt-get install -y python-software-properties 
 sudo apt-get install -y neovim
 sudo apt-get install -y zsh
 sudo apt-get install -y tmux
 sudo apt-get install -y ctags
 sudo apt-get install -y build-essential cmake python3-dev
+sudo apt-get install -y git
+sudo apt-get install -y python3-pip
+sudo apt-get install -y python-pip 
 sudo pip install pynvim jedi
 sudo pip3 install pynvim jedi
 echo "${GREEN} neovim zsh tmux ctags installation is completed${RESET}"
