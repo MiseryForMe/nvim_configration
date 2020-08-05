@@ -417,7 +417,7 @@ Plug 'tomasr/molokai'
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
+Plug 'junegunn/fzf.vim'
 Plug '~/my-prototype-plugin'
 
 Plug 'jiangmiao/auto-pairs'
