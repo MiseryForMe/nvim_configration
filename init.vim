@@ -501,7 +501,7 @@ func! CompileRunGcc()
 	endif
 endfunc
 "C,C++的调试
-map <F8> :call Rungdb()<CR>
+map <F7> :call Rungdb()<CR>
 func! Rungdb()
 	exec "w"
 	exec "!g++ % -std=c++11 -g -o %<"
@@ -663,7 +663,6 @@ nmap tl :Tlist<cr>
 
 
 
-set iskeyword+=.
 set termencoding=utf-8
 set encoding=utf8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
